@@ -467,7 +467,13 @@ train the new network (VGG16) on them and check the result.
 
 We have the  new storage project on kebnekaise.
 
+In the folder, /lunarc/nobackup/projects/snic2020-6-41/salma-files/ImageProject/Collabrations/
+I have the whole files for Ctrl_lps_project
 
+I have reported the results of the first phase on Wednesday 9 of Sep and I uploaded the .html and .ipynb notebook in LPS_project in this directory also
+
+New results will be uploaded also soon
+------------------------------------------------------------------------
 
 
 
