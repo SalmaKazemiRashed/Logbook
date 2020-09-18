@@ -474,6 +474,47 @@ I have reported the results of the first phase on Wednesday 9 of Sep and I uploa
 
 New results will be uploaded also soon
 ------------------------------------------------------------------------
+Sep 15 -- off day
+------------------------------------------------------------------------
+Sep 16-17
+Creating new dataset from Control-lps images stored in snic2020-6-41/salma-files/ImageProject/Collabrations/analysed_data/data_5_sep_cropped
+The new dataset is created by adding the blurred K=3, and K=5 filters to the original images and then a random change of brightness on the whole data set.
+Then They are separated to train, val, and test datasets and then cropped to smaller tiles while all the white-padded tiles are removed.
+The steps of dataset creation and training a vgg16model with two-feature classifier at the end is all in VGG16_Transfer_Learning-Pytorch_Control_LPS_images.ipynb notebook. The pytorch code is taken from the https://www.kaggle.com/carloalbertobarbano/vgg16-transfer-learning-pytorch (kaggle competition).
+I run the scripts in 17_Sep_Vgg_pytorch folder in lunarc and also on kebnekaise.
+
+for connecting to kebnekaise we have the storage project. I copied the data_5_sep_cropped dataset and also the python script to our new storage drive.
+Disk quotas for salmak:
+Filesystem            usage       quota   remark
+/home/s/salmak       1.90GB      1.91GB   99.7% used
+b-an01 [~]$ quota
+Disk quotas for salmak:
+Filesystem            usage       quota   remark
+/home/s/salmak       1.90GB      1.91GB   99.7% used
+/pfs/nobackup        3.84GB     25.00GB   15.4% used
+  file count          33907      100000   33.9% used
+/proj/nobackup/aits_storage
+                        4KB      1.95TB   0.0% used
+The project directory is /proj/nobackup/aits_storage
+------------------------------------------------------------------------
+Sep 18-- off day
+results of VGG16_bn is not good enough.
+I am working on it.
+------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
