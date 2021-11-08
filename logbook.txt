@@ -41,7 +41,7 @@ July1
 I took an off day
 --------------------------------------------------------------------
 July2
-NLP meeting 
+NLP meeting
 1. finish the help part and lightening text over the labels
 --------------------------------------------------------------------
 July3
@@ -59,9 +59,9 @@ July6
 	if you use the lu partition (-p lu) you will never get a gpu.
 3. working on gpu problem solving in lunarc
 --------------------------------------------------------------------
-July7 
+July7
 Second day of Eugloh school
-here are the link of three good lectures on 
+here are the link of three good lectures on
 1)biomedical image_processing
 https://www.youtube.com/watch?v=SGKej5ZovVI
 
@@ -80,14 +80,14 @@ July 8
 Unsupervised Machine Learning for Gene Expression Analysis - Part 1 (Pedro Gabriel Dias Ferreira)
 https://www.youtube.com/watch?v=MY88Jz4f8lU
 
-Unsupervised Machine Learning for Gene Expression Analysis - Part 2 (Pedro Gabriel Dias Ferreira) 
+Unsupervised Machine Learning for Gene Expression Analysis - Part 2 (Pedro Gabriel Dias Ferreira)
 https://www.youtube.com/watch?v=B0109uFoT_I
 
 
 Meeting with Sonja
 Schedule until 1st of August
 
-1) Game and documentation 
+1) Game and documentation
 
 2) Writing manuscript about game(Only outline of the paper)
 
@@ -95,7 +95,7 @@ Schedule until 1st of August
 
 4) Create Annoatate agreement table (50 images)
 
-5) Solve GPU problem of lunarc and Kebnekaise 
+5) Solve GPU problem of lunarc and Kebnekaise
 
 6)Take the credits of EUGLOH summer school
 
@@ -105,7 +105,7 @@ Summer school lectures on Economy and epidemiological aspects of COVID-19
 
 A good lecture from Anders Widell a virologist from LUND univerity
 
-SARS-Cov-2 And COVID-19 (Joakim Esbjörnsson, Anders Widell) 
+SARS-Cov-2 And COVID-19 (Joakim Esbjörnsson, Anders Widell)
 https://www.youtube.com/watch?v=LUOInNx4q_Q
 
 
@@ -114,7 +114,7 @@ https://www.youtube.com/watch?v=LUOInNx4q_Q
 July 10
 
 Summer school was finished.
-Test is done. 
+Test is done.
 A good lecture on Molecular biology and
 immunology of the SARS CoV-2 infection
 link: https://www.youtube.com/watch?v=_wjLK4_csOs
@@ -127,10 +127,10 @@ start working with kebnekaise (login through terminal, thinlinc, ...)
 through thinlinc:  server:  kebnekaise-tl.hpc2n.umu.se
 through terminal : domain: ssh yourusername@abisko.hpc2n.umu.se
 or 			   ssh yourusername@kebnekaise.hpc2n.umu.se
-Solved mariam's problems with Game 
+Solved mariam's problems with Game
 ---------------------------------------------------------------------------
 July 14
-Trying to solve gpu and torch.cuda problem in lunarc and kebnekaise (seems unsolvable :(() 
+Trying to solve gpu and torch.cuda problem in lunarc and kebnekaise (seems unsolvable :(()
 
 ---------------------------------------------------------------------------
 July 15, 16
@@ -156,11 +156,11 @@ python3  ../notebooks/python-scripts/NER_by_Flair_NCBI.py > NCBI_log.txt
 
 ****** The good news is after it started, it used gpus and it took only 00:59:22 minutes
 to run while it took 13 hours on cpu.
-In this case The devices was shown as 
+In this case The devices was shown as
 Device: cuda:0
 It means that this if became true finally:
 if torch.cuda.is_available():
-		
+
 ################################################
 Then I tried the following:
 
@@ -195,13 +195,13 @@ interactive -A LU 2020-2-10 -p gpu --gres=gpu:2 -t 1:00:00
 It is still pending after 48 hours.
 
 and the following one also didn't work, although it started immediately for one hour.
-interactive -A LU 2020-2-10 -p gpuk20 -t 1:00:00
+interactive -A LU2020-2-10 -p gpuk20 -t 1:00:00
 ###############################################################################
 The second and third scripts were the following scripts and I got different errors for each of them.
 
 2) /snic2020-6-41/salma-files/NLPProject/Flair/jobs/gpu-test.py
 It is for testing numba which is a jit compiler but I was not successful.....
-In the jupyter notebook snic2020-06-41/salma-files/NLPProject/Flair/Regex_cuda_test.ipynb I have some notes on numba and jit and....... 
+In the jupyter notebook snic2020-06-41/salma-files/NLPProject/Flair/Regex_cuda_test.ipynb I have some notes on numba and jit and.......
 
 
 
@@ -212,7 +212,7 @@ The code has the following part to copy the data on gpu:
 # Load network and send to GPU
     c = ConvNet()
     print(summary(c, torch.zeros((1,1,28,28))))
-    c.cuda() 
+    c.cuda()
 *****I received the following error while I was trying to run it on cpu in lunarc
 Found no NVIDIA driver on your system. Please check that you
 have an NVIDIA GPU and installed a driver from
@@ -224,7 +224,7 @@ And I am waiting for gpu results on lunarc
 
 
 While I was trying to run NER_by_Flair_NCBI.py on marcus system I got the following error:
-ImportError: /usr/lib/x86_64-linux-gnu/libstdc++.so.6: version `GLIBCXX_3.4.22' not found 
+ImportError: /usr/lib/x86_64-linux-gnu/libstdc++.so.6: version `GLIBCXX_3.4.22' not found
 (required by /mnt/fastdisk/BioNLP/anaconda3/lib/python3.7/site-packages/scipy/fft/_pocketfft/pypocketfft.cpython-37m-x86_64-linux-gnu.so)
 
 by typing the following command I got the version of GLIBCXX_3.4. which was:
@@ -294,7 +294,7 @@ a sample for kebnekaise job script is:
 #reconstructPar -newTimes >& log.reconstructPar
 
 python ../torch_mnist.py
-####################################################################            
+####################################################################
 --------------------------------------------------------------------
 July 21
 I am working on a tutorial for using kebnekaise and abisko
@@ -308,7 +308,7 @@ submitting a job on cpu and also gpu works on kebnekaise and abisko now.
 A copy of tutorial is sent to Malou.
 
 For running our image processing scripts on kebnekaise we need the storage project,
-since we have only 25GB of memory on /pfs/nobackup/ space. However, we have access to 
+since we have only 25GB of memory on /pfs/nobackup/ space. However, we have access to
 large memry project on kebnekaise which provides us 3072000MB memory for our job.
 ""If your job requires more than 126000MB / node on Kebnekaise, there is a limited number of nodes with 3072000MB memory, which you may be allowed to use (you apply for it as a separate resource when you make your project proposal in SUPR). They are accessed by selecting the largemem partition of the cluster. You do this by setting: -p largemem.""
 --------------------------------------------------------------------
@@ -316,7 +316,7 @@ July 23, 24
 I make a run on gpu nodes of kebnekaise. I had some error yesterday for my scripts
 as follows:
 
-AssertionError: 
+AssertionError:
 The NVIDIA driver on your system is too old (found version 10010).
 Please update your GPU driver by downloading and installing a new
 version from the URL: http://www.nvidia.com/Download/index.aspx
@@ -386,7 +386,7 @@ July 29, 30
 I annotated images again to compare with Sonja's and Jon and Mariam annotations.
 
 I assigned a number to each label and if I had the same label for each image, the numbers would sum up together..
-I assign a column to each label and show the results in a table in 
+I assign a column to each label and show the results in a table in
 snic2020-6-41/salma-files/ImageProject/Game/Annotations/Annotation_comparison.ipynb
 
 ------------------------------------------------------------------------
@@ -455,7 +455,7 @@ I had to create new conda environment as following:
 
 conda create -n tfgpu tensorflow python=3.6.8
 
-conda install tensorflow-gpu==1.13.1 
+conda install tensorflow-gpu==1.13.1
 
 to test my code again. I am working on it to solve the errors.
 ------------------------------------------------------------------------
@@ -467,40 +467,365 @@ train the new network (VGG16) on them and check the result.
 
 We have the  new storage project on kebnekaise.
 
-In the folder, /lunarc/nobackup/projects/snic2020-6-41/salma-files/ImageProject/Collabrations/
-I have all the analysis files for Ctrl_lps_project
-
-I have reported the results of the first phase on Wednesday 9 of Sep and I uploaded the .html and .ipynb notebook to LPS_project folder in this directory.
-
-New results will be uploaded also soon
-------------------------------------------------------------------------
-Sep 15 -- off day
-------------------------------------------------------------------------
+-----------------------------------------------------------------------
 Sep 16-17
-Creating new dataset from Control-lps images stored in snic2020-6-41/salma-files/ImageProject/Collabrations/analysed_data/data_5_sep_cropped
-The new dataset is created by adding the blurred K=3, and K=5 filters to the original images and then a random change of brightness on the whole data set.
-Then They are separated to train, val, and test datasets and then cropped to smaller tiles while all the white-padded tiles are removed.
-The steps of dataset creation and training a vgg16model with two-feature classifier at the end is all in VGG16_Transfer_Learning-Pytorch_Control_LPS_images.ipynb notebook. The pytorch code is taken from the https://www.kaggle.com/carloalbertobarbano/vgg16-transfer-learning-pytorch (kaggle competition).
-I run the scripts in 17_Sep_Vgg_pytorch folder in lunarc and also on kebnekaise.
 
-for connecting to kebnekaise we have the storage project. I copied the data_5_sep_cropped dataset and also the python script to our new storage drive.
-Disk quotas for salmak:
-Filesystem            usage       quota   remark
-/home/s/salmak       1.90GB      1.91GB   99.7% used
-b-an01 [~]$ quota
-Disk quotas for salmak:
-Filesystem            usage       quota   remark
-/home/s/salmak       1.90GB      1.91GB   99.7% used
-/pfs/nobackup        3.84GB     25.00GB   15.4% used
-  file count          33907      100000   33.9% used
-/proj/nobackup/aits_storage
-                        4KB      1.95TB   0.0% used
-The project directory is /proj/nobackup/aits_storage
+I used pytorch for training the vgg16 classifiers on darcy' project and ran on marcus's system.
+The results were not good enough. working on that....
+
+
+----------------------------------------------------------------------
+Sep 18-30
+
+vacation
+----------------------------------------------------------------------
+October 1- Nov 09
+parental leave
+----------------------------------------------------------------------
+Nov 07
+
+on Nov07 I had problem by lunarc system.
+My pocketpass token expired by October 26:th.
+I had to Follow the instructions at
+https://lunarc-documentation.readthedocs.io/en/latest/authenticator_howto/#checking-the-validity-of-your-token
+to register and activate a new one.
+I start to listen to Stanford NLP course lectures.
+first lecture on youtube:
+https://www.youtube.com/watch?v=8rXD5-xhemo
+----------------------------------------------------------------------
+Nov 10
+Stanford NLP course
+----------------------------------------------------------------------
+Nov13
+The first lecture is summarized in /snic2020-06-41/salma-files/NLPProject/CS224N/lecture1/cs224n.ipynb
+the theoritical optimization problem+gensim package
+gloVe embedding + word2vec
+
+
+A small cell death lecture is summarized in  /snic2020-06-41/salma-files/Biology/Cell_death/ directory as apoptosis.txt
+
+A lecture on NLP (analysing the text of stand-up comedians transcripts..) with
+full steps are summarized in /snic2020-06-41/salma-files/
+----------------------------------------------------------------------
+Dec 1
+Come back from parental leave
+work 25% (mornings)
+A short talk with Sonja: what to do next?
+what is going on:
+1)Augustin and ludwig are working on classification of histology screens
+2)Peter_Alexander are working on biobert NLP relation extraction
+what should I do:
+Game:
+Compare results (new results)
+Share with Rafsan
+Transfer everything to git (change notebooks to .py files)
+write "make-files" for scripts
+control version with git
+.json hyperparameter for each model
+write readme.txt for each directory
+send email to carl for system biology course
+deep learning_ journal club in 2021
+a facebook page hubAI
+deep learning course (get material from Sonja)
+Read Augustin and ludwiq's notebook in onenote
+----------------------------------------------
+Dec 02
+Start working at 18:30 (for around 2 hours)
+Update the annotation databases to skip the first 100 images
+I used "update annotate_table set first_label ='skip,salma' where id in (select id from annotate_table limit 100 );" command.
+Copied the new game for Sonja and Rafsan
+---------------------------------------------
+Dec 03
+start 9:30
+try to fix the game for Rafsan, still error and it is about the conda environment.
+histology meeting(guys trained a 3 class classifier)
+They shared grad-cam code and the version of packages.
+Tensorflow version 2.3.0
+keras version 2.4.3
+---------------------------------------------
+Dec 08,
+
+Fix the grad-cam (results are not good)
+Fix Rafsan's game
+---------------------------------------------
+Dec 14
+start 10:30
+check Rafsan's and Sonja's annotation(not done yet)
+---------------------------------------------
+Dec 21
+Things to do:
+1) Binary game
+2) Check scores of Iran's images
+3) Grad-cam completion and uplaod
+4) Game Draft and binary draft
+5) Ask for Malous' code for new cutouts
+
+----------------------------------------------
+Dec 22-Jan 21
+Working on Iran's dataset
+train Vgg16 and resnet50 regression model for average scores
+train Vgg16 and resnet50 regression model for individual scores
+Working on kebnekaise
+---------------------------------------------
+Jan 22
+Receive Iran's new dataset for ECMO, MV, and ECMO+LPS treatments
+Want to test previous models on these Images
+Meeting with Darcy and Iran on 22 of Jan
+
+Image processing course of Michigan University still going on!
+Paper from Thomas group for weekend
+--------------------------------------------
+5th of Feb
+Annual meeting with Sonja
+What we discussed:
+agile,virtal board: doing, to be done, three of us!
+make contacts with industry
+Build a network, journal club
+After a seminra discuss what we have learned
+every two weeks,
+one in a month,
+Technical groups
+PhD course
+put you in contact with others
+practice on papers
+
+Lets do pytorch
+grad-com
+docker
+NLP course
+May (NLP course)
+Teaching course...
+Spark
+
+8 papers (small papers)
+1. good routines work together
+2. publish papers
+3. histology paper
+4. Mariam projects
+5. This year Sonja writes
+6. read lots of papers
+7. grant writing
+8. Co-supervisor
+9. This paper
+10. Malou's annotations
+11. Swedish NLP (NER for swedish symptoms)
+12. Swedish Sapcy and bert (Flair)
+-----------------------------------------------
+Feb 9, 10
+Working on training with new paremeters
+Change learning rate : doesnot work
+Add BN: works but not well
+Add CLR:  /proj/nobackup/aits_storage/salma-files/NLPenv/bin/python -m pip install CLR
+or  /proj/nobackup/aits_storage/salma-files/NLPenv/bin/python -m pip install --upgrade pip first
+I have to mention the PATH since it is  originally installed on /pfs/nobackup/home/s/salmak/NLPenv/lib/python3.7/site-packages
+
+-----------------------------------------------
+Feb12
+Read the neurodegenerative thesis and comment on DE analysis part
+----------------------------------------------
+Feb13, 14
+Review CS224 course first lecture (Math and script part)
+----------------------------------------------
+Feb15
+Working on Pytorch version of regression model
+Review first lecture of deep learning in computer vision course
+Learning Pytorch!!!(started from this link: https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
+The steps are summerized in salma-files/Courses/Pytorch/Tutorial.ipynb notebook
+-----------------------------------------------
+Feb 15-Feb28
+Finilizing histology project's results
+
+----------------------------------------------
+March first Week : knowledge in collabration course
+----------------------------------------------
+March Second Week: Statistics I course
+----------------------------------------------
+March third week: Off days
+----------------------------------------------
+March Fourth week: Qualitative resarch course
+----------------------------------------------
+April first week: Working on graphical visualization of scores on the images for histology project
+----------------------------------------------
+April second week: Off days
+---------------------------------------------
+April third and fourth week : Statistics II course
+---------------------------------------------
+April 25-May 3
+Train EfficientNet0 on total score (not better than Vgg16)
+*************Future plan: Train EfficientNet4 and 7.
+--------------------------------------------
+May 4-May 10 Research ethics Course
+-------------------------------------------
+May 6 jouranl club : 
+SPICE paper
+************Future plan to run it over 890000 images
+-------------------------------------------
+May 12
+Meeting with Johanna
+*************Write script fot parsing the pdf journals
+in R or Python
+Visualize relation graph in R and Cytoscape
+install.packages("BiocManager")
+library(BiocManager)
+BiocManager::install(version = "3.12")
+BiocManager::install("paxtoolsr")
+library(paxtoolsr)
+BiocManager::install("rJava")
+library(rJava)
+help.search("paxtoolsr")
+
+install.packages("igraph")
+library(igraph)
+
+results <- readSif("tab_example.sif")
+g <- loadSifInIgraph(results)
+g
+plot(g)
+-----------------------------------------------
+May 13
+Johanna added us to the github repository
+**************Add flair model to the NLP pipeline
+----------------------------------------------
+May 14-23
+Work 50%
+Done this week:
+*Debug Mariam's Grad-cam code
+*Write the Script for parsing pdf file in R (only first phase that extracts patient info+ aktuellt + huvud... info)
+*train B4, and B7 on three-groups dataset and also five-group dataset (for B7 I changed batch-size to 8)
+waiting for results
+   JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+          13215312    single Regressi   salmak  R       6:44      1 b-cn0123 
+          13215298    single Regressi   salmak  R       8:24      1 b-cn0123 
+          13215230    single Regressi   salmak  R      12:18      1 b-cn0343 
+          13215206    single Regressi   salmak  R      13:39      1 b-cn0343 
+          13215202    single Regressi   salmak  R      17:17      1 b-cn0847 
+Going to do:
+Start Coursera NLP course
+----------------------------------------------
+May 24-29 
+plan:
+Finish histology runs and complete the manuscript
+Finisg NLP course
+----------------------------------------------
+June 1-25
+working 50 %
+Working on histology project
+Finding a bug in 5-fold dataset
+slide 28 exists in both MV and Control and copied to both folds where MV was validation and where Control was validation by mistake
+Correcting that
+
+Filling the information in the manuscript
+---------------------------------------------
+June 29
+*******making new environment
+pip install opencv-python-headless
+--------------------------------------------
+Parental leave on July (alost 100 %)
+-------------------------------------------
+9th of July Group meeting
+Results:
+Salma:
+	1. Histology
+	2. Biobert project
+Goals:
+Train the large version on HunNer corpora
+Save the model in .pb format for further predictions
+Use clusters (Alvis)
+Make it compatible with TF.02
+Finish the manuscript 
+
+
+Sonja:
+Mariam’s project
+Gene, symbols, identifier
+To resolve them to a single 
+Conversion tool, uniport has
+Gene ids could be chosen but uniport (manually reviewed part and 
+Another part automatically part (unreviewed part))
+Some don’t match (still updating)
+Sonja Update Mariam’s code (pandas instead of for loops)
+Theresa is doing master project in August
+
+--------------------------------------------
+Aug 03,
+I realized I was not running my codes on gpus. There was this error that 
+"Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.1.."
+
+I did  ml CUDAcore/11.3.1
+
+And It is solved. I also 
+ml 2) cuDNN/8.2.1.32-CUDA-11.3.1   3) CUDA/10.1.243   4) CUDAcore/11.3.1
+Now the code is running on gpu :)
+
+------------------------------------------
+Nov 01 2021
+start working after Two month full leave
+1. This week I will work on histology manuscript
+2. I also try to run the biobert pytorch models on gold standard
+(only for gene and protein)
+3. Add my binary part to Iran's manuscript
+-----------------------------------------
+Nov02, 03, and 04 vab (Noura was at home)
+I added all biobert results to NER_results excel sheet.
+
+checking the data (Hunflair data and tokenization)
+
+I have one from Adam-ola github page which is 
+https://github.com/Aitslab/BioNLP/tree/master/Adam_Ola/ner_inputs/HunFlair_NER_gene/gene_all_combined/train_dev.tsv
+
+
+And one from Marcus Klang as HUNER_DATASET.zip on 
+ner_inputs directory 
+----------------------------------------
+Nov 08
+All the dates of folders are checked by 
+stat command 
+All the reported results were done on Adam-ola dataset
+Added all to excel sheet
+
+Start to add Flair results
+
+---------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ------------------------------------------------------------------------
-Sep 18-- off day
-results of VGG16_bn is not good enough.
-I am working on it.
-------------------------------------------------------------------------
 
 
 
@@ -509,34 +834,4 @@ I am working on it.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+----------------------------------------------------------------------
