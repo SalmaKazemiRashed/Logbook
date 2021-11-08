@@ -778,15 +778,32 @@ And one from Marcus Klang as HUNER_DATASET.zip on
 ner_inputs directory 
 ----------------------------------------
 Nov 08
-All the dates of folders are checked by 
-stat command 
-All the reported results were done on Adam-ola dataset
-Added all to excel sheet
+-All the dates of folders are checked by stat command 
+-All the reported results were done on Adam-ola dataset Added all to excel sheet
 
-Start to add Flair results
+**Start to add Flair results
 
+After this all the done tasks will shown by -
+After this all the ongoing tasks will shown by **
+
+-Updated logbook added to /salmaviolet/Microscopy_image_analysis_folder/ github repo
+Following steps were done:
+-git clone https://github.com/salmaviolet/Microscopy_image_analysis_folder.git
+-git add logbook.txt
+-git commit -m 'Update Nov 08'
+
+then in Setting - developer setting - generate token - copy the token
+
+-git push -u origin master or -git push
+username: salmaviolet
+paste: paste token
+
+tips: For moving curser to the end of vim editor:
+ESC   
+then 
+Shift + G
 ---------------------------------------
-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
+
 
 
 
