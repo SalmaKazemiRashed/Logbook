@@ -803,6 +803,32 @@ ESC
 then 
 Shift + G
 ---------------------------------------
+Nov 17 -- Parental leave
+---------------------------------------
+Nov 18
+
+- Request for barzelius account and sign the agreement
+- username: x_salka
+ For using gpu in scripts
+ add --gpus 4 (e.g.,)
+ and also run this 
+ 
+conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch 
+*****This did not work 
+ 
+It is also possible to use gpu in front end interactive mode
+interactive --gpus=1
+*** This also worked
+
+
+*****This did
+conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvidia
+
+
+
+------------------------------------- 
+ 
+
 
 
 
