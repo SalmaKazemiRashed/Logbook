@@ -803,6 +803,15 @@ ESC
 then 
 Shift + G
 ---------------------------------------
+Nov 16
+*Flair embeddings are not working
+*The link is now
+https://nlp.informatik.hu-berlin.de/resources/embeddings/flair/
+
+-I had to download embedding files as *.pt and pass the path to FlairEmbeddings('.pt path') function.
+---------------------------------------
+
+
 Nov 17 -- Parental leave
 ---------------------------------------
 Nov 18
