@@ -836,7 +836,26 @@ conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvid
 
 
 ------------------------------------- 
+ Nov 19
+ work 50%
+ Noura was sick
+ Finish Flair evaluation on Gold standard
  
+ train the model
+ save the checkpoints
+ load the checkpoints and resume the training
+ add all the results to Excel sheet
+ -------------------------------------
+ Nov 22- Noura was sick
+ -------------------------------------
+ Nov 23- come back to office
+ read Iran's manuscript
+ Answer all comments
+ -------------------------------------
+ 
+ 
+ 
+
 
 
 
