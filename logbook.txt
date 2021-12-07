@@ -852,9 +852,29 @@ conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvid
  read Iran's manuscript
  Answer all comments
  -------------------------------------
- 
- 
- 
+ Nov 24-25
+ I was sick
+ -------------------------------------
+ Nov 26
+ Working on manuscript
+ -------------------------------------
+ Nov 29- Dec 03
+ Oral communication course
+ -------------------------------------
+ Dec 06
+ A little work on Kaggle new compettition data
+ Being in contact with Malou
+ She train U-Net on the data 15 epochs
+ The results shows F1-score of 0.16 (the best score is around 0.339 now)
+ write the manuscript
+ -------------------------------------
+Dec 07
+-Still on Kaggle data
+
+* I will write the binary part of histology manuscript today
+--------------------------------------
+
+
 
 
 
