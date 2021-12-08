@@ -873,7 +873,15 @@ Dec 07
 
 * I will write the binary part of histology manuscript today
 --------------------------------------
+Dec 08
+For creating Malou's environment
 
+First need to 
+conda update --all 
+conda env export --no-builds > env.yml 
+conda env create -f env.yml
+- also need to change the name of env in env.yml
+-------------------------------------
 
 
 
