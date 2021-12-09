@@ -883,10 +883,20 @@ conda env create -f env.yml
 - also need to change the name of env in env.yml
 -------------------------------------
 
+Dec 09
+Got gpu work
+still some error
+
+tensorflow = '1.14.0'
+keras = 2.2.4
+cudatoolkit = 10.0.130
+cudnn    = first 7.3  then 7.6.5 (got gpu to work but still not running the model)
+
+---------------------------------------		
 
 
 
-
+	
 
 
 
