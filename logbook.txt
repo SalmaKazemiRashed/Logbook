@@ -894,6 +894,35 @@ cudnn    = first 7.3  then 7.6.5 (got gpu to work but still not running the mode
 
 ---------------------------------------		
 
+Dec 10
+Gpu works for Malou's code on berzelius
+Still some bugs in evaluation (have to fixed)
+
+Meeting with Sonja and rafsan
+
+---------------------------------------
+Dec 13
+Working on a new model from https://bitbucket.org/t_scherr/cell-segmentation-and-tracking/src/master/
+did not work
+
+Looking for a simple algorithm called Watershed from cv package
+or run UNET again on predicted masks tomorrow
+
+-Working on the github repo Rafsan shared with me
+-Add Flair to the Pipeline
+----------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	
