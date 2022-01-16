@@ -911,6 +911,23 @@ or run UNET again on predicted masks tomorrow
 -Working on the github repo Rafsan shared with me
 -Add Flair to the Pipeline
 ----------------------------------------
+Dec 14
+Put aside segmentation project for now.
+I did not get Malou's result anyway.*************************************
+Meeting with Iran
+-----------------------------------------
+Dec 15-Jan 14
+Working on Binary paper- histology
+Rerun everything
+Add all files to OneDrive/manuscripts/histo1
+Working on Manuscript
+-----------------------------------------
+Jan 16
+Start adding Flair to pipleline
+-----------------------------------------
+
+
+
 
 
 
