@@ -925,6 +925,23 @@ Working on Manuscript
 Jan 16
 Start adding Flair to pipleline
 -----------------------------------------
+Jan 17-27
+
+Correcting Iran's plot
+*** Adding three-class classifier instead of binary to the first manuscript
+
+Adding plots to the figure file
+Adding Flair to pipleline
+
+presented Journal club paper
+-----------------------------------------
+Jan 29
+Finish 3-class classifier runs
+Finisg adding Flair model to Pipleline
+
+-----------------------------------------
+
+
 
 
 
