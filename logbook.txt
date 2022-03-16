@@ -968,6 +968,46 @@ four runs on Alvis for 3 class classifier.
 
 EffNetB4, Vgg16 for 3-fold and 5-fold cross validation
 ------------------------------------------
+March 17
+I was finalizing the Histology papers results during the past few weeks.
+
+Binary classification of MV+LPS and control slides.
+Three-class classification of all slides.
+And regression models.
+notebooks and excel results of total score is now added to OneDrive. 
+
+Individual scores and visualization did not finalized (I will do after I came back on 14th)
+During next weeks I will write the histology papers (first Iran's paper and second my own).
+
+Today I checked Sonja's new images on Swestore. Only names and list them.
+
+Berzelius is now has two step authorization with TOPT app on phone.
+
+Something I should do is the LUBI seminar (20th of April)
+Ellite focus group stuff
+
+
+
+
+Flair model and all embeddings that I downloaded from ftp server are on berzelius shared with Rafsan.
+
+I did a small unsupervised clustering on histology images. I took the features from classifiers and regression models and feed them into unsupervised clustering algorthms. The results shows separate clusters in some cases. results are on OneDrive. I want to train a 5 class classifier and do unsupervised clustering on those for focus ellite group.
+
+
+
+***After one month 
+
+1) you should update your Mahara,
+2) Read the hackathon of Focus Ellite
+3) Write the histo 1 paper
+4)Write the histo 2 paper
+5) any idea on unsupervised clustering
+6)Test SHap value
+
+--------------------------------------------
+
+
+
 
 
 
