@@ -1005,6 +1005,23 @@ I did a small unsupervised clustering on histology images. I took the features f
 6)Test SHap value
 
 --------------------------------------------
+19th Of April
+return from 4 weeks vacation
+
+Working on Histology project
+train a 5 class classification VGG16 based model to feed the feature vector into an unsupervised algorithm
+
+submit abstract for LUBI seminar
+
+reading hachathon immunotherapy stuff
+
+
+---------------------------------------------
+
+
+
+
+
 
 
 
