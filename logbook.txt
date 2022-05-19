@@ -1017,6 +1017,182 @@ reading hachathon immunotherapy stuff
 
 
 ---------------------------------------------
+20th Of April to 16th May
+participate in ellite focus period event
+hachathon, workshop, course
+course link: https://canvas.education.lu.se/courses/17746
+
+projector.tensorflow.org (Links to an external site.)
+
+UMAP video for kindergarten 1Links to an external site.
+
+UMAP video for kindergarten 2 Links to an external site.
+
+UMAP video for high schoolLinks to an external site.
+
+Understanding UMAP - blog with demosLinks to an external site.
+
+DISTILL https://distill.pub/2016/misread-tsne/Links to an external site.
+
+Kernel Methods in Machine Learning, Hoffman et al 2008.
+
+Kernel course by Julien Marial and Jean-Philippe Vert : https://members.cbio.mines-paristech.fr/~jvert/svn/kernelcourse/course/2021mva/index.htmlLinks to an external site.
+
+Slides on Data Analysis with Positive Definite Kernels, Fukumizu 2010
+
+
+Causal Inference
+Elements of Causal Inference  Download Elements of Causal Inference, book by Peters, Janzing and Schölkopf
+
+See also lecture 5 and 6 in this course on Modeling and Learning from Data
+
+There are also nice MIT lectures by Jonas Peters on youtube (Links to an external site.)
+
+The kernel based Hilbert  Schmidt Independence Criterion (Links to an external site.) is often used to in this field
+
+
+The lectures are also saved in \Documents\Med_faculty_courses.
+
+----------------------------------------------------------------------
+On May 16
+I had seminar on hitology project.
+continue working on histology
+
+weekly meeting with Darcy and Iran
+
+Following Giovanni's seminar
+
+new ideas!!!!!!!!!!!!!!! soon after histology papers
+new papers saved in /C:\ImageProject_files\Ellite_focus\Giovanni
+
+remove batch_effect and noise from images
+
+
+---------------------------------------------------------------------
+during this time we could train hovernet for both cells and nuclei
+pytorch version works!
+for convrting our labels to .mat file I used Marisa and LEO's script in MATALB.
+
+for creating environment for pytorch version after I installed the conda env they mentioned I had to update my env as:
+pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio===0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+
+Then it works.
+
+
+For cell images since some target patches are full of objects and there is no background we should change two scripts 
+first in 
+models/hovernet/target.py 
+
+
+as : 
+#######for some images that there is no background (0)
+if 0 in inst_list:
+	inst_list.remove(0) # 0 is background #plt.imshow(crop_ann)
+	#save(str(random.randint(0,1000))+'_.npy',asarray(crop_ann)) #print(inst_list) for inst_id in inst_list:
+inst_map = np.array(fixed_ann == inst_id, np.uint8)
+inst_box = get_bounding_box(inst_map) # expand the box by 2px
+# Because we first pad the ann at line 207, the bboxes
+# will remain valid after expansion
+inst_box[0] -= 2
+inst_box[2] -= 2
+inst_box[1] += 2
+inst_box[3] += 2 inst_map = inst_map[inst_box[0] : inst_box[1], inst_box[2] : inst_box[3]] if inst_map.shape[0] < 2 or inst_map.shape[1] < 2:
+continue # instance center of mass, rounded to nearest pixel
+inst_com = list(measurements.center_of_mass(inst_map))
+
+
+#and hereeeeeeeeeeeeeeeeeeeee to make NAN a number
+if math.isnan(inst_com[0]) or math.isnan(inst_com[1]):
+	inst_com[0] = 40
+	inst_com[1] = 40
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ and also I had to change dataloader/Aug.py as  
+ 
+ 
+def fix_mirror_padding(ann):
+"""Deal with duplicated instances due to mirroring in interpolation
+during shape augmentation (scale, rotation etc.).
+"""
+current_max_id = np.amax(ann)
+inst_list = list(np.unique(ann))
+if 0 in inst_list:
+	inst_list.remove(0) # 0 is background
+
+
+for inst_id in inst_list:
+inst_map = np.array(ann == inst_id, np.uint8)
+remapped_ids = measurements.label(inst_map)[0]
+remapped_ids[remapped_ids > 1] += current_max_id
+ann[remapped_ids > 1] = remapped_ids[remapped_ids > 1]
+current_max_id = np.amax(ann)
+return ann
+----------------------------------------------------------------------------------------------------
+For predicting the labels the run_infer.py should be run as:
+python run_infer.py --model_path=logs/00/net_epoch\=10.tar --model_mode='original' --gpu='0,1' tile --input_dir=../dataset/Malou/annotatedimages/Green_Stain_channel/normalized_images/  --output_dir=output/lysosome_new_10_valid
+
+--model_mode is important and I set all other plotting and saving paramters to True inside the code.
+
+
+---------------------------------------------------------------------------------------------------
+May 19
+hovernet is not working so well on cell images
+I should try other models on cell images
+
+--------------------------------------------------------------------------------------------------
+May 20 - May29
+working on Histology manuscripts
+
+read Giovanni's paper
+
+--------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
