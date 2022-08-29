@@ -1151,6 +1151,52 @@ working on Histology manuscripts
 read Giovanni's paper
 
 --------------------------------------------------------------------------------------------------
+June-July 23
+Working on histology manuscript
+
+Finalized results for 3 class classifier for 3fold-cv
+
+Finish paper
+New result on augmented dataset
+--------------------------------------------------------------------------------------------------
+From July 23 to Aug 15 (Vacation)
+
+--------------------------------------------------------------------------------------------------
+Aug 23-24 Compute retreat
+--------------------------------------------------------------------------------------------------
+Aug 24-25 
+
+Meeting with Sonja
+
+Finishing Histo 1 paper
+Finishing Histo 2 paper
+
+
+Running Malou's models on all data (check one)
+
+Or running Hovernet on all data
+
+
+--------------------------------------------------------------------------------------------------
+ 
+ 29 Aug 
+ start Histo 2 paper (The goal is to finish the first version until end of this week)
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
