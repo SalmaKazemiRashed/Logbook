@@ -1182,6 +1182,58 @@ Or running Hovernet on all data
  29 Aug 
  start Histo 2 paper (The goal is to finish the first version until end of this week)
  
+ -------------------------------------------------------------------------------------------------
+ Sep 02
+ 
+ I had one meeting with Iran during the previous week
+ 
+ I wrote almost 4 pages of Histo 2 paper (I have binary and 3 class finalized results)
+ while regression features are not finalized
+ 
+ I had to train Flair models on HunFlair
+ 
+ Cell_line and Species and Disease Done!
+ 
+ But Protein and Chemical were stopped due to Time limit(10 Hours)
+ I wanted to resume it.
+ It took a while.
+ 
+ They have changed Trainer.load_checkpoint(checkpoint, corpus)
+ and Trainer.train
+ 
+ to 
+ Trained_model = SequenceTagger.load(any model (best or checkpoint))
+ 
+ and trainer.resume(Trained_model)
+ 
+ Now it is running on Berzelius (Will check on Monday).
+ 
+ Continue writing the Histo 2 paper-
+ Meeting with Sonja and Iran next week
+ 
+ Share Flair results with Rafsan.
+ 
+ ****Check Hovernet models to run over some cells. Lets seeee
+ ------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
