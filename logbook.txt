@@ -1216,7 +1216,13 @@ Or running Hovernet on all data
  ****Check Hovernet models to run over some cells. Lets seeee
  ------------------------------------------------------------------------------------------------
  
+ Sep 05-
+ Chemical and Protein not finished
+ Resume them again on Berzelius
  
+ Continue writing Histo 2 paper
+ 
+ ----------------------------------------------------------------------------------------------
  
  
  
