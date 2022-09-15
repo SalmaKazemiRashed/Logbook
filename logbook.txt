@@ -1223,6 +1223,20 @@ Or running Hovernet on all data
  Continue writing Histo 2 paper
  
  ----------------------------------------------------------------------------------------------
+ Sep 15
+ I will be off on sep 16, and 19.
+ 
+ I continue writing Histo 2 paper.
+ Have a chat with Iran regarding new figures.
+ 
+ I started new analysis on multilable multi class classification on features.
+ 
+ After that I will continue on label distribution instead of one point label.
+ The goal is to finish these two analysis until end of Sep.
+ finish Histo 2 paper first week of October.
+ 
+ I decide to correct unsupervised part also!!
+ ------------------------------------------------------------------------------------------------
  
  
  
