@@ -1237,6 +1237,37 @@ Or running Hovernet on all data
  
  I decide to correct unsupervised part also!!
  ------------------------------------------------------------------------------------------------
+ October 25
+ During the past 6 weeks I did all this regarding Histology project.
+ I first took the latent space vector of classification models and feed them into unsupervised algorithms. At first I could see three different clusters and
+ I realized that is because of different folds I had and each fold vectors had totally different mean and frequency and I tried to normalized them to same mean and frequency but still three clusters because of folds not classes. Then I run only one model over all of them and I could see that different classes has clustered separately...
+ 
+ 
+ I also run gradcam over three class classification models and I realized some images got 0 after fc1 layer because of relu function and I changed the relu function 
+ to sigmoid for the raw models and two best models to check the results.
+ 
+ On Alvis there was this error of endlock for model.fit(callbacks...) and I had to add this line to my job script and it solved the error:
+ 
+ Export HDF5_USE_FILE_LOCKING=FALSE
+ 
+ I also aggregate the results of different models on slide level....
+ 
+ 
+ 
+ Now what to do next:
+ Check new results and add them to first paper. 1 day
+ Write about all this in first paper.2 days
+ Check all results on second histo paper.7 days
+ Add all to second histo paper. 7 days
+ Write tutotial for klara 3 days.
+ 
+ --------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
