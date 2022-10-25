@@ -1261,6 +1261,21 @@ Or running Hovernet on all data
  Add all to second histo paper. 7 days
  Write tutotial for klara 3 days.
  
+ The runs I changed:
+ 
+ vgg_raw_3folds_softmax
+ not third_one (make another run for that, increase the time of script)
+ 
+ vgg_rnd_aug_3folds_softmax
+ not 2nd and 3rd, increase the time of run.
+ 
+ effnet_raw_3folds_softmax
+ done
+ 
+ effnet_rnd_aug_3folds_softmax
+ running for 3rd part
+ 
+ 
  --------------------------------------------------------------------------------------------
  
  
