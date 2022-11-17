@@ -1277,6 +1277,16 @@ Or running Hovernet on all data
  
  
  --------------------------------------------------------------------------------------------
+ 17 November 2022
+ 
+ run hovernet on berzelius over 10 images copied from Saved_selected_.._8_bit images from lunarc
+ 
+ Klara copied them
+ she run chmod +w folder to gave write and copy access to me
+ 
+ docopt package only pip3 install docopt works
+ imgaug and Shapely! same
+ 
  
  
  
