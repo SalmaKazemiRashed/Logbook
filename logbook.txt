@@ -1288,7 +1288,46 @@ Or running Hovernet on all data
  imgaug and Shapely! same
  
  -------------------------------------------------------------------------------------------
+ 14 December
+ In the last month I was working on Segmentation project.
  
+ We trained hovernet with 130 images (100 from BBBC and 30 from Aits training images)
+ 
+ We also test and validated that with 10 and 10 test and validation set. 
+ 
+ Then for testing Malou's models we had problem
+ The model predict some corrupted images.
+ We get Malou's Model_3, Model_14, Model_12, Model_39.
+ from https://onedrive.live.com/?authkey=%21AsFmim3HgeIiZTQ&cid=CD17748C94D4252F&id=CD17748C94D4252F%2158036&parId=CD17748C94D4252F%2158033&o=OneUp
+ 
+ I tried with TF v1 as TF=1.14,
+ 
+ but not nice results-
+ 
+ Given task to Klara to make the same env as Malou to try again.
+ 
+ In the meanwhile, I trained the model again on CPU for 30 epochs on the same 130 images and tes
+ t and validate on 10 images. Results were not that good
+ So, I tried again with GPU on TF v2.
+ I had to change the model to use TF 2 and all keras... to tf.keras...
+ Layer packages also had to be changed..
+ 
+ I saw a very low value as inside and boundary precision and recall.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ conda config --add envs_dirs /big_partition/users/user/.conda/envs
+ conda config --add pkgs_dirs /big_partition/users/user/.conda/pkgs
  
  
  
