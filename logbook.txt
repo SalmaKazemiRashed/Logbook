@@ -1316,14 +1316,39 @@ Or running Hovernet on all data
  
  Error occurred when finalizing GeneratorDataset iterator: Cancelled: Operation was cancelled
  
+ changing TF 2.1 to 2.2 solved this error but still we got intrinsic_precision and recall as 25%.
  
+ In the mean time Malou shared her 4 models which is 3, 14, 12, and 39.
+ making same environment was very important.
  
- 
-TF 2.1 to 2.2
+ Before adding any package I had to run the following commands to make the package and envs directories on the shared_direcrtory.
  
  
  conda config --add envs_dirs /big_partition/users/user/.conda/envs
  conda config --add pkgs_dirs /big_partition/users/user/.conda/pkgs
+ Then the following packages with following versions were installed!!
+ Again, the versions are very important!!
+ versions:
+Python - 3.6.13
+Keras - 2.2.4
+tensorflow - 1.13.1
+scikit-image - 0.14.1
+cudatoolkit - 10.0.130
+
+
+and numpy should be 15.1.0
+
+-------------------------------------------------------------
+19 December till 5th Jan
+Gave the task for klara to run Malou's two other models on model 12, and model 39.
+
+Copied the notebook in her directory to calculate the score for Malou's models 
+
+And practice the extraction, conversion code on more images.
+
+ 
+ 
+ 
  
  
  
