@@ -1346,6 +1346,7 @@ Copied the notebook in her directory to calculate the score for Malou's models
 
 And practice the extraction, conversion code on more images.
 
+my images are darker on UNET. Malou's images are brighter in Segm folder. (Should fix that)
  
  
  
