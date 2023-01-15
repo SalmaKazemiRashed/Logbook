@@ -1355,6 +1355,26 @@ my images are darker on UNET. Malou's images are brighter in Segm folder. (Shoul
  and gradcam and adding more layers
  
  
+ -------------------------------------------------------------
+ 15 of Jan
+ During the last week, I was writing histo 1.5 paper.
+ Klara was working on Sonja's comments on hovernet and UNEt evaluation.
+ 
+ There was some error in segmentation error cell.
+ I need to fix it.
+ 
+ I trained UNET but only got 25% intristic accuracy. (Something wrong with Dataset I think)
+ 
+ There was some bug regarding number of true objects. Sonja found it and I fixed it in hovernet notebook in klara's directory.
+ 
+ EVerywhere the number of truely found objects should be subtracted by 1.
+ even in F1_score and False_negatives and False_positive functions.
+ And segmentation error is missed ones (red points not blue not purple!!)
+ 
+ -------------------------------------------------------------------
+ 
+ 
+ 
  
  
  
