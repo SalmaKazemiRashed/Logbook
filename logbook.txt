@@ -1372,6 +1372,22 @@ my images are darker on UNET. Malou's images are brighter in Segm folder. (Shoul
  And segmentation error is missed ones (red points not blue not purple!!)
  
  -------------------------------------------------------------------
+ Feb 13
+ In the last week I was working on the Histo 1.5 Gradcam part which I found something myabe not correct.
+ 
+ In Histo 1.5 paper The first unsupervised part is almost done and only formulas should be written. 13 of Feb done!
+ 
+ In the gradcam part different activation functions are tested. I saw some problems with relu or elu or leakyrelu+relu. Leaky Relu had the best performance
+ 
+ I started to write the mathematic behind it. However, in gradcam there is nothing regrading those functions and the gradient is calculated from output w.r.t. last
+ conv layer.
+ 
+ I tried to rewrite the code and calculate grads again. because I could not trust the result of tf.gradient!
+ 
+ How 
+ 
+ 
+ 
  
  
  
