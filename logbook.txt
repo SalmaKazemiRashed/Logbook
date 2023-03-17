@@ -1384,8 +1384,26 @@ my images are darker on UNET. Malou's images are brighter in Segm folder. (Shoul
  
  I tried to rewrite the code and calculate grads again. because I could not trust the result of tf.gradient!
  
- How 
+ However, It took too much time. tf.gradient is correct
+ --------------------------------------------------------------------------
+ March 17
+ My half-time is set to 4/20 9 o' clock.
+ I am working on summary of projects, portfolio and manuscripts.
+ I want to finish my hist 1.5 and histo 2 and segmentation.
  
+ Klara is working on plates.
+ She run the in parallel. I will add that part soon.
+ 
+ Now I am just finishing the Game part,
+ I just add only 100 images for each channel 
+ 
+ delete from annotate_table where rowid > (select rowid from annptate_table limit 99,1);
+ Also make all labels empty by
+ update annotate_table set first_label='' where first_label!='';
+ The code will be deposited to github.
+ 
+ 
+ ---------------------------------------------------------------------------
  
  
  
