@@ -1405,6 +1405,25 @@ my images are darker on UNET. Malou's images are brighter in Segm folder. (Shoul
  
  ---------------------------------------------------------------------------
  
+ 20 of March
+ Aim:
+ plotting results for plates with Klara
+ finishing portfolio
+ and summary today.
+ 
+ 
+ Notes:
+we were checking control columns.
+There are three negative control columns (non-targeting siRNA, transfection agent only, and  non-transfected cells)
+so basically non-transfected cells are normal without anything.
+transfection agent is the agent prepare cells to take siRNA but no siRNA
+and non-targeting siRNA has siRNA with transfection agent but the siRNA target no gene (no sequence.)
+
+There are 3 positive controls (LIPA for lysosomal cell death  it is for )
+two siRNA (siPLK1 and KIF11). 
+ 
+ ----------------------------------------------------------------------------
+
  
  
  
