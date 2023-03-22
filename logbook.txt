@@ -1404,7 +1404,6 @@ my images are darker on UNET. Malou's images are brighter in Segm folder. (Shoul
  
  
  ---------------------------------------------------------------------------
- 
  20 of March
  Aim:
  plotting results for plates with Klara
@@ -1423,12 +1422,47 @@ There are 3 positive controls (LIPA for lysosomal cell death  it is for )
 two siRNA (siPLK1 and KIF11). 
  
  ----------------------------------------------------------------------------
+22 of March
+I finished my portfolio and shared with Sonja.
+Portfolio:
+https://maharaportfolio.medicin.lu.se/view/view.php?t=ff4eff80c95d08c5e8a4
+for creating this link we 
+press three lines/Pages and collections/ click on the correct page/Edit/share/ create secret URL
 
- 
- 
- 
- 
- 
+------------------------------------------------------------------------------
+About projects:
+1) Segmentation Project with Klara.
+We are wroking on predicting more plates.
+All files are on 
+/proj/berzelius-2021-21/users/klara/Segmentation/
+which has all new prediction results in plate_Script and the notebooks including notebook for counting all the cells and mean of size of cells (nuclei) in notebooks
+directory.
+The raw downloaded data from Swestore is saved in raw_data folder.
+We have  Barcode_plates_new.txt which has all the barcodes and A, B , C, D tag in which A, and B are without oxidative stress and C and D are with oxidative stress.
+B and D are the repetition of A and C.
+The data from Aits Lab and also BBBc all are in Klara's folder.
+The rest of the files are in 
+OneDrive - Lund University\Segmentation_UNET_HoverNET directory which has the manuscript,
+files from Sonja for the experiment and the notebook for extracting barcodes and associated plates for each barcode number.
+Note from Sonja:
+Sonja aits:
+
+you can find the correct plate as I described above: so, basically the steps are: 1. take list in "final plates" tab in screen qc.xlsx file 2. for each plate get the Unique Plate Descriptor from the file by matching the PlateId listed found in step 1 with the Unique Plate Descriptor in the file sonja_image_list.csv. If there are multiple Unique Plate Descriptors matching the PlateId, use the one where the Protocol column says "sonja_screen_spots20170524(v03)". Normally, there should be only one Unique Plate Descriptor that has this. However, in some rare cases a plate may have been run in two pieces, so then half of the plate has one Unique Plate Descriptor and the other half has another one. If you find a plate with more than one Unique Plate Descriptor, just double check with me. 3. With the Unique Plate Descriptor you can find the image folder with the same name. 4. To find the genes that were knocked down on this specific plate, compare the number in the PlateId to the Plate numbers in the file VCFG_Hu_siGENOME. For the control columns check the file "controls_sonja_aits_primary_screen.txt
+so, look at the Protocol column. It should say "sonja_screen_spots20170524(v03)"
+if you find more than one with this protocol, check with me
+
+
+------------------------------------------------------------------------------
+2) Game_project
+
+For the rest of the day I am going to finish my Summary the game part and its manuscript as much as I can and push the code to 
+https://github.com/Aitslab/Online_Game
+
+with 100 images for each level for now.
+
+The manuscript is on manuscripts directory shared on One-drive.
+-----------------------------------------------------------------------------
+
  
  
  
