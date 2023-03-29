@@ -1460,9 +1460,83 @@ https://github.com/Aitslab/Online_Game
 
 with 100 images for each level for now.
 
-The manuscript is on manuscripts directory shared on One-drive.
------------------------------------------------------------------------------
+The manuscript is on manuscripts directory shared on One-drive. 
+-------------------------------------------------------------------------------
+March 29
+NLP project
+I cleaned Histo1 and 1.5 data and put datasets created from Histo main data in lunarc shared folder in data_created_Salma/Histology_data
+Then I wanted to test my flair models on gold standard data and also Rafsan wanted Flair based models (trained on HunFlair) results on CRAFT dataset
+which was chemical , gene, and species.
 
+I spend 29th of March on Flair model and evaluting it on CRAFT and GS.
+I was trying to use predict function first.
+
+So basically define a SequenceTagger object from SequenceTagger class and then load the weights from model which was on the model repo:
+https://nlp.informatik.hu-berlin.de/resources/models/
+
+or just Sequencetagger.load('tag_name')## e.g. 'hunflair-chemical' mentioned in flair.models in sequence_tagger.py
+
+after that I realized predict funtion need the data to be in Sentence object (If I fed tokenized text such as corpus.test).
+So, after I worked with predict function I even try to feed the test.tsv file in foor loop of sentences.
+for k in corpus.test.datasets[0][0:5]:
+    print(k)
+results:
+Sentence[15]: "Complex trait analysis of the mouse striatum : independent QTLs modulate volume and neuron number"
+Sentence[1]: " Abstract"
+Sentence[1]: " Background"
+Sentence[45]: " The striatum plays a pivotal role in modulating motor activity and higher cognitive function . We analyzed variation in striatal volume and neuron number in mice and initiated a complex trait analysis to discover polymorphic genes that modulate the structure of the basal ganglia ."
+Sentence[1]: " Results"
+Sentence[187]: " Brain weight , brain and striatal volume , neuron-packing density and number were estimated bilaterally using unbiased stereological procedures in five inbred strains ( A/J , C57BL/6J , DBA/2J , BALB/cJ , and BXD5 ) and an F2 intercross between A/J and BXD5 . Striatal volume ranged from 20 to 37 mm3 . Neuron-packing density ranged from approximately 50,000 to 100,000 neurons/mm3 , and the striatal neuron population ranged from 1.4 to 2.5 million . Inbred animals with larger brains had larger striata but lower neuron-packing density resulting in a narrow range of average neuron populations . In contrast , there was a strong positive correlation between volume and neuron number among intercross progeny . We mapped two quantitative trait loci ( QTLs ) with selective effects on striatal architecture . Bsc10a maps to the central region of Chr 10 ( LRS of 17.5 near D10Mit186 ) and has intense effects on striatal volume and moderate effects on brain volume . Stnn19a maps to distal Chr 19 ( LRS of 15 at D19Mit123 ) and is associated with differences of up to 400,000 neurons among animals ."
+
+
+So, basically feed corpus.test[0] in a for loop and took the output and convert it to tokens and get the tags.
+It is still maybe a good and accurate way.
+
+But!
+
+
+There was also other problem with ELMOembeddings. ELmoembeddings is not supported anymore in newer version of allennlp.
+only in allennlp=0.9.0 and less
+
+and this version has conflict with transformers>3.
+
+So, I think ELmoEmbeddings should be removed and we can not use them anymore.
+
+#################################################
+The other thing is I used evalute function instead of prediction.
+In which the format to use it was 
+from flair.data import Sentence
+from flair.models import SequenceTagger
+# load tagger
+tagger = SequenceTagger.load('hunflair-chemical')
+result = tagger.evaluate(corpus.test, mini_batch_size=32, out_path=f"predictions.txt", gold_label_type="ner")
+print(result.detailed_results)
+
+I am waiting to check the results of CRAFT chemical, CRAFT gene, CRAFT species and GS chemical , disease, and protein.
+-----------------------------------------------------------------------------
+March 30-2023
+Half time
+Game manuscript done and I shared it with Sonja and Rafsan on manuscripts directory on Onedrive,
+
+I started to finish Histo2 and Histo 1.5 manuscript, both on manuscript folder on Onedrive.
+
+I finished summary of projects and shared it with Sonja. done
+
+Segmentation Project
+me and Klara finished 8 plates (1A,1B,1C,1D) and (2A,2B,2C,2D).
+I have downloaded 3 series for Klara and she is working on them.
+We had the simple plot for all wells before. But now we have control wells and we can plot the same plot as Sonja shared with us with the number of cells
+and also the area of cells for all wells and negative and positive control wells.
+
+All segmentation files are on berzelius /proj/berzelius-2021-21/klara/Segmentation directory.
+I download all new plates in raw_data folder where we keep also barcode information and corresponding plates for each barcode and we follow it.
+
+The first part of segmentation manuscript is finished which was comparison of hovernet and unet, we are working on the second part which is the result on the whole screen (as much as we can!)
+
+
+
+
+----------------------------------------------------------------------------
  
  
  
