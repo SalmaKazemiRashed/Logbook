@@ -1547,6 +1547,34 @@ The codes in notebooks are on Onedrive and my own computer. I will update and cl
 Today I am adding scores to tiles and create main image and after that finishing writing the manuscript histo 2.
 
 
+I copied weights for best model of total score for 5 fold cross validation which was VGG16_LReLU to my computer in 
+Image_project/Histology_binary/jobs/regression_models/...
+
+
+I have all histology updated notebooks in my computer categorized into four binary, 3class, unsupervised and regression models.
+
+However, for histo 1.5 I continued and corrected unsupervised analysis based on 3class models and save in 3class section on my computer. So, it would be binary and regression models, in histo 2 paper, 
+3class models in histo 1 paper, 
+and unsupervised + gradcam + shap in histo 1.5. Files are saved in 3class part.
+
+I have four category weights:
+3 class runs, 
+warm up runs
+change of activation function such as elu, and ..
+train more layers
+
+
+I will do the same for regression models 
+Total score
+and individual scores
+
+and each preprcoeesing steps including taking Median or Average as gold score. Adding that to the names of images and creating different folds from data.
+The files are now on Lunarc, berzelius, and alvis and my computer.
+----------------------------------------------------------------------------------------------------
+
+
+
+
 
 
 
