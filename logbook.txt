@@ -1533,11 +1533,28 @@ I download all new plates in raw_data folder where we keep also barcode informat
 
 The first part of segmentation manuscript is finished which was comparison of hovernet and unet, we are working on the second part which is the result on the whole screen (as much as we can!)
 
-
-
-
 ----------------------------------------------------------------------------
- 
+April 3, 2023
+Histology Project
+I updated all figures in histo 2 paper. 
+The models were on lunarc/Salma-files/kebnekaise-data/Salma_files/ctrl_lps_analysis
+both for VGG16 and Resnet50 for individual models
+
+
+For total score of regression models also models were there for VGG, resnet, and EffnetB0-B4
+
+The codes in notebooks are on Onedrive and my own computer. I will update and clean files after finishing manuscript.
+Today I am adding scores to tiles and create main image and after that finishing writing the manuscript histo 2.
+
+
+
+
+
+
+
+
+
+
  
  
  
