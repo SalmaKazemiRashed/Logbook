@@ -1571,7 +1571,11 @@ and individual scores
 and each preprcoeesing steps including taking Median or Average as gold score. Adding that to the names of images and creating different folds from data.
 The files are now on Lunarc, berzelius, and alvis and my computer.
 ----------------------------------------------------------------------------------------------------
-
+April 20 
+I have had my half-time defence.
+I had some comments from opponents.
+I will continue my logbook in another file for the second half of my PhD and I will work more on documentation.
+----------------------------------------------------------------------------------------------------
 
 
 
